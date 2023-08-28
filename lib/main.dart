@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/Layout/Screen_Layout.dart';
+import 'package:portfolio/screens/Project_Screen.dart';
 
 void main() {
   if (kIsWeb) {}
@@ -19,8 +20,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ScreenLayout(
-          page: 0,
-        ));
+        home: ScreenLayout(page: 0));
   }
 }

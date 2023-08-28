@@ -37,6 +37,10 @@ class _ProjectScreenState extends State<ProjectScreen> {
 
   @override
   Widget build(BuildContext context) {
+    fetchvideo(ProjectModel model) {
+      return videoplayer(videourl: model.video, icon: model.icon);
+    }
+
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -122,7 +126,11 @@ class _ProjectScreenState extends State<ProjectScreen> {
                                 }
 
                                 fetchmodel(selected);
-                                setState(() {});
+                                Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            ProjectScreen(num: selected)));
                               },
                               icon: const Icon(Icons.arrow_back_ios)),
                         ],
@@ -227,17 +235,12 @@ class _ProjectScreenState extends State<ProjectScreen> {
                                       height: 30,
                                     ),
                                     Container(
-                                      height: h * 0.8,
-                                      width: w * 0.2,
-                                      decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(40)),
-                                      child: videoplayer(
-                                        videourl: model.video,
-                                        icon: model.icon,
-                                      ),
-                                    ),
+                                        height: h * 0.83,
+                                        width: w * 0.2,
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                        ),
+                                        child: fetchvideo(model))
                                   ],
                                 ),
                               )),
@@ -259,7 +262,11 @@ class _ProjectScreenState extends State<ProjectScreen> {
                                 }
 
                                 fetchmodel(selected);
-                                setState(() {});
+                                Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            ProjectScreen(num: selected)));
                               },
                               icon: const Icon(Icons.arrow_forward_ios)),
                         ],

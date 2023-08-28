@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
+import 'package:widget_mask/widget_mask.dart';
 
 class videoplayer extends StatefulWidget {
   final String videourl;
@@ -18,14 +19,13 @@ class _videoplayerState extends State<videoplayer> {
 
   @override
   void initState() {
-    _controller = VideoPlayerController.networkUrl(
-      Uri.parse(
-          'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4'),
-    );
-    _initializeVideoPlayerFuture = _controller.initialize();
+    print("init");
 
-    _controller.setLooping(true);
-    _controller.play();
+    _controller = VideoPlayerController.networkUrl(Uri.parse(widget.videourl));
+    _initializeVideoPlayerFuture = _controller.initialize().then((value) {
+      _controller.setLooping(true);
+      _controller.play();
+    });
 
     super.initState();
   }
@@ -43,11 +43,10 @@ class _videoplayerState extends State<videoplayer> {
       future: _initializeVideoPlayerFuture,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          return AspectRatio(
-            aspectRatio: _controller.value.aspectRatio,
-            child: VideoPlayer(_controller),
-          );
+          print(widget.videourl);
+          return VideoPlayer(_controller);
         } else {
+          print(widget.videourl);
           return Center(child: CircularProgressIndicator());
         }
       },

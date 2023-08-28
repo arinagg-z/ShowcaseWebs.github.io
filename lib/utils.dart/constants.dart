@@ -51,7 +51,7 @@ List<ProjectModel> modellist = [
 final ProjectModel amazonclonemodel = ProjectModel(
     icon: "assests/images/ecom.png",
     video:
-        "https://drive.google.com/file/d/1RTVkGwT2vx0kHH1kaSq6BF9sMq_TuQ2U/view?usp=sharing",
+        "https://github.com/arinagg-z/ShowcaseWebs.github.io/releases/download/upvid/amazonvid.mp4",
     name: "AmazonClone",
     descption:
         "Amazon's innovative project developed using Flutter, a versatile UI toolkit, delivers a seamless and dynamic shopping experience to users. With its cross-platform compatibility and engaging interface, the app provides efficient browsing, personalized recommendations, and secure transactions, redefining the way customers interact and shop within the Amazon ecosystem.",
@@ -60,7 +60,7 @@ final ProjectModel amazonclonemodel = ProjectModel(
 final ProjectModel fashionappmodel = ProjectModel(
     icon: "assests/images/fashion.png",
     video:
-        'https://drive.google.com/file/d/1R2KuNbG4gpaTsQz6N9GxLYl16CB25KTa/view?usp=sharing',
+        "https://github.com/arinagg-z/ShowcaseWebs.github.io/releases/download/upvid/fashionappvid.mp4",
     name: "FashionApp - Ui",
     descption:
         "Introducing our sleek fashion app UI, where style meets simplicity. Navigate effortlessly through curated collections, discover the latest trends, and personalize your wardrobe. With a clean and intuitive design, browsing becomes a pleasure. From elegant dresses to casual attire, explore an array of options. Seamlessly add favorites to your wishlist and enjoy a hassle-free shopping experience. Elevate your fashion journey with our app's modern, user-friendly interface, making staying trendy easier than ever.",
@@ -69,7 +69,7 @@ final ProjectModel fashionappmodel = ProjectModel(
 final ProjectModel spaappmodel = ProjectModel(
     icon: "assests/images/spa.png",
     video:
-        'https://drive.google.com/file/d/1RPQN0XGctXc7fmB0aE2wfaf5DnnAH3e2/view?usp=sharing',
+        "https://github.com/arinagg-z/ShowcaseWebs.github.io/releases/download/upvid/spaappvid.mp4",
     name: "SpaApp - Ui",
     descption:
         "Embark on a journey of tranquility with our Spa app's soothing UI. Seamlessly navigate through a serene blend of soft colors and intuitive icons that guide you to your desired relaxation experience. From selecting rejuvenating treatments to booking your oasis of calm, our app's design ensures a seamless journey of pure indulgence. Elevate your senses and embrace the harmony of a thoughtfully crafted spa escape—all at the touch of your fingertips. Your pathway to ultimate relaxation starts here.",
@@ -78,7 +78,7 @@ final ProjectModel spaappmodel = ProjectModel(
 final ProjectModel Chagptclonemodel = ProjectModel(
   icon: "assests/images/ai.png",
   video:
-      'https://drive.google.com/file/d/1RONmAyIyd4TktmuIF-QwDjoZhb5aFYyI/view?usp=sharing',
+      "https://github.com/arinagg-z/ShowcaseWebs.github.io/releases/download/upvid/chatgptvid.mp4",
   name: "ChatGpt",
   descption:
       "The ChatGPTClone is an advanced AI conversational model designed to facilitate interactive and dynamic communication. With its intuitive interface, it seamlessly engages users in informative discussions and creative exchanges. Combining cutting-edge language processing, real-time learning, and a user-friendly design, ChatGPTClone offers a versatile solution for various professional, educational, and entertainment contexts, making interactions more productive and engaging.",
