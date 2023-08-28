@@ -1,7 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/Layout/Screen_Layout.dart';
 
 void main() {
+  if (kIsWeb) {}
   runApp(const MyApp());
 }
 
